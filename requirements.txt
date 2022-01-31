@@ -1,5 +1,5 @@
 sphinx==4.3.1
-sphinx-bootstrap-theme
+furo
 sphinx-autobuild
 sphinxext-rediraffe
 sphinxcontrib.fulltoc

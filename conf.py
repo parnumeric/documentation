@@ -3,7 +3,7 @@
 import os
 import sys
 
-import sphinx_bootstrap_theme
+# import sphinx_bootstrap_theme
 # sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
@@ -12,7 +12,7 @@ import sphinx_bootstrap_theme
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.fulltoc',
+    # 'sphinxcontrib.fulltoc',
     "sphinxext.rediraffe",
     'sphinx.ext.mathjax',
     'sphinx_copybutton'
@@ -71,43 +71,44 @@ mathjax_path='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
 
 # -- Options for HTML output ----------------------------------------------
 
-html_theme = 'bootstrap'
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-html_theme_options = {
-    'navbar_title': " ",
-    'navbar_site_name': "Contents",
-    'navbar_links': [
-        ("Usage", "usage/index"),
-        ("Hardware", "hardware/index"),
-        ("Software", "software/index"),
-        ("Guides", "guides/index"),
-        ("Training", "training/index"),
-        ("User Group", "user-group/index"),
-        ("FAQ", "faq/index"),
-    ],
+html_theme = 'furo'
+html_title = 'Bede Documentation'
+# html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+# html_theme_options = {
+#     'navbar_title': " ",
+#     'navbar_site_name': "Contents",
+#     'navbar_links': [
+#         ("Usage", "usage/index"),
+#         ("Hardware", "hardware/index"),
+#         ("Software", "software/index"),
+#         ("Guides", "guides/index"),
+#         ("Training", "training/index"),
+#         ("User Group", "user-group/index"),
+#         ("FAQ", "faq/index"),
+#     ],
 
-    # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': False,
+#     # Render the next and previous page links in navbar. (Default: true)
+#     'navbar_sidebarrel': False,
 
-    # Render the current pages TOC in the navbar. (Default: true)
-    'navbar_pagenav': False,
-    'source_link_position': "footer",
-    'bootswatch_theme': "flatly",
-    'globaltoc_depth': 2,
+#     # Render the current pages TOC in the navbar. (Default: true)
+#     'navbar_pagenav': False,
+#     'source_link_position': "footer",
+#     'bootswatch_theme': "flatly",
+#     'globaltoc_depth': 2,
 
-}
+# }
 html_static_path = ['_static']
 
 # add custom css files
 html_css_files = [
-    'css/custom.css',
+    # 'css/custom.css',
 ]
 
 # Add custom js files
 html_js_files = [
     'https://use.fontawesome.com/c79ff27dd1.js',
     'js/rtd-versions.js',
-    'js/custom.js'
+    # 'js/custom.js'
 ]
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
@@ -171,20 +172,20 @@ texinfo_documents = [
 ]
 
 # html sidebars issues warnings if multiple wildcard selectors match, so this is more verbsoe than it ideally would be. 
-html_sidebars = {
-    '**': ['sidebartoc.html'],
-    'index': [],
-    'search': [],
-    'usage/index': ['localtoc.html'],
-    'hardware/index': [],
-    'training/index': ['localtoc.html'],
-    'guides/index': ['sidebartoc.html'],
-    'faq/index': ['localtoc.html'],
-    'user-group/index': [],
-    'faq/index': ['localtoc.html'],
-    'glossary/index': ['localtoc.html'],
-    'rhel8/index': ['localtoc.html'],
-}
+# html_sidebars = {
+#     '**': ['sidebartoc.html'],
+#     'index': [],
+#     'search': [],
+#     'usage/index': ['localtoc.html'],
+#     'hardware/index': [],
+#     'training/index': ['localtoc.html'],
+#     'guides/index': ['sidebartoc.html'],
+#     'faq/index': ['localtoc.html'],
+#     'user-group/index': [],
+#     'faq/index': ['localtoc.html'],
+#     'glossary/index': ['localtoc.html'],
+#     'rhel8/index': ['localtoc.html'],
+# }
 
 def setup(app):
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
