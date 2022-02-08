@@ -1,22 +1,23 @@
 .. _software-applications-wmlce:
 
-IBM WMLCE
-=========
+IBM WMLCE (End of Life)
+=======================
 
-`IBM WMLCE <https://www.ibm.com/support/pages/get-started-ibm-wml-ce>`__ is the Watson Machine Learning Community Edition, a software distribution for machine learning which included some technology previews such as `Large Model Support for TensorFlow <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_getstarted_tflms.html?view=kc#wmlce_getstarted_tflms>`__.
+`IBM WMLCE <https://www.ibm.com/support/pages/get-started-ibm-wml-ce>`__ was the *Watson Machine Learning Community Edition* - a software distribution for machine learning which included some technology previews such as `Large Model Support for TensorFlow <https://www.ibm.com/support/knowledgecenter/SS5SF7_1.7.0/navigation/wmlce_getstarted_tflms.html?view=kc#wmlce_getstarted_tflms>`__.
 
 .. warning:: 
 
-   WMLCE was archived by IBM on 2020-11-10 and is no longer updated or maintained. 
+   WMLCE was archived by IBM on 2020-11-10 and is no longer updated, maintained or supported.
 
    It has been replaced by :ref:`Open Cognitiive Environment (Open-CE) <software-applications-open-ce>`, a community driven software distribution for machine learning. 
    Open-CE does not not support all features of WMLCE.
+   Please refer to the :ref:`Open-CE <software-applications-open-ce>` for more information.
 
    The remainder of this document refers to WMLCE, so may be considered out of date.
 
 .. warning:: 
 
-   WMLCE 1.7 may not be compatible with RHEL 8.
+   WMLCE 1.7 may not be compatible with RHEL 8, 
 
 PyTorch and TensorFlow: IBM PowerAI and wmlce [Possibly Out of Date]
 --------------------------------------------------------------------
