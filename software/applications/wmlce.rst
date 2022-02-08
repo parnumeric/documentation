@@ -9,7 +9,8 @@ IBM WMLCE
 
    WMLCE was archived by IBM on 2020-11-10 and is no longer updated or maintained. 
 
-   It has been replaced by `Open-CE <https://osuosl.org/services/powerdev/opence/>`__, a community driven software distribution for machine learning, which does not support all features of WMLCE.
+   It has been replaced by :ref:`Open Cognitiive Environment (Open-CE) <software-applications-open-ce>`, a community driven software distribution for machine learning. 
+   Open-CE does not not support all features of WMLCE.
 
    The remainder of this document refers to WMLCE, so may be considered out of date.
 
