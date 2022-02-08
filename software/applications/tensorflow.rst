@@ -1,4 +1,4 @@
-.. _software-python-tensorflow:
+.. _software-applications-tensorflow:
 
 TensorFlow
 ----------
