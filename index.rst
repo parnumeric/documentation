@@ -27,3 +27,4 @@ Please note that the system is still under active development, and so some funct
    user-group/index
    glossary/index
    rhel8/index
+   events/index
