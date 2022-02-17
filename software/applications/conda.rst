@@ -5,6 +5,9 @@ Conda
 
 `Conda <https://docs.conda.io/>`__ is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies.
 
+
+.. _software-applications-conda-installing:
+
 Installing Miniconda
 ~~~~~~~~~~~~~~~~~~~~
 
