@@ -31,20 +31,21 @@ Open-CE provides software packages via :ref:`Conda<software-applications-conda>`
 
 With a working conda install, Open-CE packages can be installed from either the OSU or MIT conda channels.
 
-
 I.e. to install ``tensorflow`` and ``pytorch`` from OSU Open-CE conda channel
+
+.. @todo - ensure it is suggested to create the conda env in /projects/ or /nobackup, not /user due to large install size.
 
 .. code-block:: bash
 
-   # Create a new conda environment named open-ce, if necessary
+   # Create a new conda environment named open-ce stored in /projects/<PROJECT>, if necessary
    conda create -y --name open-ce python==3.9
 
    # Activate the conda environment
    conda activate open-ce
 
    # Install the required conda package, specifying the channel to install from
-   conda install -c https://ftp.osuosl.org/pub/open-ce/current/ tensorflow
-   conda install -c https://ftp.osuosl.org/pub/open-ce/current/ pytorch
+   conda install -c https://ftp.osuosl.org/pub/open-ce/current/ -y tensorflow
+   conda install -c https://ftp.osuosl.org/pub/open-ce/current/ -y pytorch
 
 Once installed into a conda environment, the Open-CE provided software packages can be used interactivly on login nodes or within batch jobs by activating the named conda environment.
 
@@ -55,10 +56,10 @@ Once installed into a conda environment, the Open-CE provided software packages 
 
    # Run a python command or script which makes use of the installed packages
    # I.e. to output the version of tensorflow:
-   python3 -c "import tensorflow;print(tensorflow.__version)"
+   python3 -c "import tensorflow;print(tensorflow.__version__)"
 
-    # I.e. or to output the version of pytorch:
-   python3 -c "import torch;print(torch.__version)"
+   # I.e. or to output the version of pytorch:
+   python3 -c "import torch;print(torch.__version__)"
 
 Why use Open-CE
 ---------------
@@ -69,10 +70,17 @@ Why use Open-CE
 Differences from WMLCE
 ----------------------
 
-@todo - emphasise the differences between wmlce in a subsection?
-No LMS. 
-No ddlrun? 
+IBM WMLCE include several features not available in upstream Tensorflow and PyTorch distributions, such as Large Model Support.
 
+Unfortunately, LMS is not available in Tensorflow or PyTorch provided by Open-CE.
+
+Other features or packages absent in Open-CE which were included in WMLCE include:
+
+* Large Model Support (LMS)
+* IBM DDL
+* Caffe (IMB-enhanced)
+* IBM SnapML
+* NVIDIA Rapids 
 
 Benchmark
 ---------

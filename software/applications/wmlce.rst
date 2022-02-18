@@ -17,7 +17,7 @@ IBM WMLCE (End of Life)
 
 .. warning:: 
 
-   WMLCE 1.7 may not be compatible with RHEL 8, 
+   WMLCE 1.7 may not be compatible with RHEL 8
 
 PyTorch and TensorFlow: IBM PowerAI and wmlce [Possibly Out of Date]
 --------------------------------------------------------------------
